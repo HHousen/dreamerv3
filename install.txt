@@ -1,0 +1,10 @@
+conda create -n dreamer python=3.9
+conda activate dreamer
+conda install jaxlib=*=*cuda* jax cuda-nvcc -c conda-forge -c nvidia
+conda install tensorflow-cpu gym==0.19.0 cloudpickle rich optax ruamel.yaml -c conda-forge
+pip install tensorflow_probability crafter
+
+Then train with
+python dreamerv3/train.py \
+  --logdir ./exp1-logs/$(date "+%Y%m%d-%H%M%S") \
+  --configs crafter xlarge --batch_size 16

@@ -1,0 +1,3 @@
+[submodule "abstraction"]
+	path = abstraction
+	url = git@github.com:simonalford42/abstraction.git
