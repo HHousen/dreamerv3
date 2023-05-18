@@ -10,3 +10,7 @@ wandb/
 dreamer-boxworld-logs/
 *.err
 *.out
+dreamer-boxworld-scale_big_train16/
+dreamer-boxworld-scale_big_train64/
+dreamer-boxworld-scale_less_small/
+dreamer-boxworld-scale_less_small_train64/
